@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>airline fare prediction</title>
+
+</head>
+
+<body>
+    <div class="container text-center">
+    <form action="/math" method="post">
+            <label class="form-label" for="ag">age</label>
+            <input type="number" id="ag" name="a" class="form-control" /><br>
+
+            <label class="form-label" for="sex">sex</label>
+            <input type="number" id="sex" name="se" class="form-control" /><br>
+
+           <label class="form-label" for="bmi">BMI</label>
+           <input type="number" id="bmi" name="b" class="form-control" /><br>
+
+           <label class="form-label" for="ch">no of children</label>
+           <input type="number" id="ch" name="c" class="form-control" />
+
+            <label class="form-label" for="smk">Smoker</label>
+            <br><input type="number" id="smk" name="s" , class="form-control" />
+
+            <label class="form-label" for="re">region</label>
+            <br><input type="number" id="re" name="r"  class="form-control" />
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+<div class="row">
+{% if prediction %}
+<h2>{{prediction}}</h2>
+{% endif %}</div>
+
+
+</div>
+</body>
+</html>
